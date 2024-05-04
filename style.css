@@ -2,9 +2,14 @@
     background-color: #1498FF;
     color: white;
 }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
 
 nav{
- box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.25);
+ box-shadow: 6px 6px 6px rgba(1, 1, 1, 0.30);
  position: sticky;
 top: 0;
 margin: auto;
@@ -23,6 +28,28 @@ padding:10px ;
     margin: 5px;
     /* padding: 5px; */
 }
+.back-image{
+    background-position: center;
+    font-size: cover;
+    background-image: no repeat;
+    /* height: 1000%; */
+    /* width: 100%; */
+}
+button{
+    
+    background-color: red;
+    color: white;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    margin-inline: 8px;
+}
+
+
 
 
 

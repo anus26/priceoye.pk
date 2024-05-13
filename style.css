@@ -44,7 +44,16 @@ body,html{
     color: #fff;
 
 }
+.nav .opensearch .nav-links .a{
+transition:all 0.2 linear ;
+}
+.nav .opensearch .nav-links{
+    opacity: 0;
+    pointer-events: none;
+}
+
  .search-icon{
+    
     
     cursor: pointer;
     font-size: 20px;
@@ -56,46 +65,56 @@ body,html{
     width: 100%;
     max-width: 555px;
     right:350px ;
-    
+    opacity: 0;
+    pointer-events: none; 
+    transform: translateY(-50%);
 
 }
+.nav .opensearch .search-box{
+    opacity: 1;
+    pointer-events: auto;
+}
 
-.search-box .icon{
+.search-box .search-icon{
     position: absolute;
     left: 15px;
     top: 50%;
-    left: 505px;
+    left: 15px;
     transform: translateY(-50%);
-}
+} 
+
 .search-box input{
     height: 100%;
     width: 100%;
     border: none;
-    outline: none;
-    border-radius: 6px;
+    /* outline: none;
+    border-radius: 6px; */
+    padding: 0 15px 0 45px;
 
 }
-.button{
+.submit{
     display: flex;
-    justify-content: end;
-    text-align: end;
-    align-items: end;
+    /* justify-content: end; */
+    /* text-align: end; */
+    align-items: end; 
     /* height: 40px; */
     width: 23px;
     font-size: 17px;
-    gap: 5px;
+    gap: 23px;
 
 
 }
-.button .login{
+ .login{
     background-color: white;
     border: none;
     outline: none;
     cursor: pointer;
     color: black;
+    
+    
 }
 
-.button .register{
+.register{
     background-color: red;
     border: none;
     outline: none;
@@ -103,3 +122,6 @@ body,html{
     color: white;
     
 }
+
+
+

@@ -10,6 +10,76 @@ body,html{
     
 
 }
+.announcment-bar{
+    background-color: #1498FF;
+
+}
+
+ nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.25);
+    position: sticky;
+   top: 0;
+   margin: auto;
+   background-color :hsla(206, 100%, 54%, 0.635);
+   padding:10px ;
+   } 
+
+  
+   .navigation{
+       display: flex;
+       justify-content: space-around;
+       text-align: center;
+   }
+
+   /* search-box{
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    max-width: 555px;
+    right:350px ;
+    opacity: 0;
+    pointer-events: none; 
+    transform: translateY(-50%);
+
+} */
+
+  .search-icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}  
+
+.input{
+    height: 100%;
+    width: 100%;
+    border: none;
+      outline: none;
+    border-radius: 6px;  
+    padding: 0 15px 0 45px; 
+
+ }  
+   .images{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 5px;
+       /* padding: 5px; */
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .nav{
     position: fixed;
     top: 0;
@@ -22,8 +92,11 @@ body,html{
 
 
 
-}
-.nav,
+} */
+
+
+ 
+/* .nav,
 .nav .nav-links{
     display:flex ;
     align-items: center;
@@ -36,8 +109,8 @@ body,html{
 .a {
     color: white;
     text-decoration: none;
-}
-
+/* } */
+/* 
 .nav .nav-links{
     column-gap: 20px;
     list-style: none;
@@ -46,11 +119,11 @@ body,html{
 }
 .nav .opensearch .nav-links .a{
 transition:all 0.2 linear ;
-}
-.nav .opensearch .nav-links{
+ }  */
+  /* .nav .opensearch .nav-links{
     opacity: 0;
     pointer-events: none;
-}
+} 
 
  .search-icon{
     
@@ -87,17 +160,17 @@ transition:all 0.2 linear ;
     height: 100%;
     width: 100%;
     border: none;
-    /* outline: none;
-    border-radius: 6px; */
+      outline: none;
+    border-radius: 6px;  
     padding: 0 15px 0 45px;
 
-}
-.submit{
+} */
+/* .submit{
     display: flex;
-    /* justify-content: end; */
-    /* text-align: end; */
+     justify-content: end; 
+    text-align: end; 
     align-items: end; 
-    /* height: 40px; */
+    height: 40px; 
     width: 23px;
     font-size: 17px;
     gap: 23px;
@@ -124,4 +197,10 @@ transition:all 0.2 linear ;
 }
 
 
+.images{
+    display: flex;
+    justify-content: space-around;
+}
 
+
+   */

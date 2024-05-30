@@ -138,7 +138,21 @@ input{
     
 
 }
-.
+
+.container-cardcontent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 17px;
+    gap: 20px;
+    position: sticky;
+    padding
+
+
+}
+
 
 
 

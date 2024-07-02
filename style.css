@@ -17,7 +17,7 @@
 
  nav{
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.25);
-    position: sticky;
+    /* position: sticky; */
    top: 0;
    margin: auto;
    background-color :hsla(206, 100%, 54%, 0.635);
@@ -98,15 +98,15 @@ search-box{
     margin: 5px;
 }
 
-.container-card{
+.container_card{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    margin-top: -3px;
-    gap: 20px;
-    position: sticky;
+    align-items: center; 
+     text-align: center;
+     /* flex-wrap: wrap;  */
+     margin-top: -3px;
+    gap: 20px; 
+     position:relative ;
     
 
 
@@ -117,23 +117,28 @@ search-box{
     margin-top: -185px;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
-    font-size: large;
+    align-items: center; 
+     font-size: large;
     padding: 20px;
     margin-right:10px ;
     
 
-}
+} 
 
-.container-cardcontent{
+.container_cardcontent{
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;  */
     margin-top: 17px;
     gap: 20px;
-    position: sticky;
+    
+}  
+.main-container{
+    background: rgb(195, 195, 225);
+    
+    
 }
 .para{
     display: flex;
@@ -141,6 +146,15 @@ search-box{
     text-align: center;
     justify-content: center;
 }
+#p{
+    display: flex;
+    justify-content: center;
+}
+.video{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 

@@ -8,11 +8,27 @@
 /* body,html{ */
     /* background: lavender; */
     
-
 /* } */
 .announcment-bar{
     background-color: #1498FF;
+}
+/* Default styles for announcement bar */
 
+
+/* Media query for screens 768px and larger (tablets and desktops) */
+@media screen and (min-width: 768px) {
+    .announcement-bar {
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+/* Media query for screens 1200px and larger (large desktops) */
+@media screen and (min-width: 1200px) {
+    .announcement-bar {
+        padding: 30px;
+        font-size: 24px;
+    }
 }
 
  nav{
@@ -24,14 +40,44 @@
    padding:10px ;
    
 }
-  
+
+/* Media query for screens 768px and larger (tablets and desktops) */
+@media screen and (min-width: 768px) {
+    nav {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+/* Media query for screens 1200px and larger (large desktops) */
+@media screen and (min-width: 1200px) {
+    nav {
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
    .navigation{
        display: flex;
        justify-content: space-between;
        /* text-align: center; */
    }
-   
 
+
+/* Media query for screens 768px and larger (tablets and desktops) */
+@media screen and (min-width: 768px) {
+    
+        /* Adjust styles for larger screens if needed */
+    
+}
+
+/* Media query for screens 1200px and larger (large desktops) */
+@media screen and (min-width: 1200px)  {
+        /* Further adjust styles for very large screens if needed */
+    }
+
+
+   
 search-box{
     position: absolute;
     height: 45px;
@@ -41,17 +87,15 @@ search-box{
     opacity: 0;
     pointer-events: none; 
     transform: translateY(-50%);
-
 }  
-
   .icon{
     position: absolute;
     left: 555px;
+    top: 50%;
     top:11%;
     left: 43%; 
     transform: translateY(-50%);
 }   
-
 .input{
     height: 100%;
     width: 100%;
@@ -59,15 +103,61 @@ search-box{
       outline: none;
     border-radius: 8px;  
     padding: 0 15px 0 45px; 
-
  }   
-   .images{
+
+/* Media query for screens 768px and larger (tablets and desktops) */
+@media screen and (min-width: 768px) {
+    .input {
+        padding: 0 20px; /* Adjust padding for larger screens */
+    }
+}
+
+/* Media query for screens 1200px and larger (large desktops) */
+@media screen and (min-width: 1200px) {
+    .input {
+        padding: 0 25px; /* Further adjust padding for even larger screens */
+    }
+}
+
+   /* .images{
        display: flex;
        justify-content: space-between;
        align-items: center;
        margin: 5px;
         padding: 5px; 
-   }
+   } */
+   .images {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.images > div {
+    text-align: center; /* Center text within each item */
+    flex: 0 0 calc(50% - 10px); /* Each item takes up 50% of the container minus margins */
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Media query for screens 768px and larger (tablets and desktops) */
+@media screen and (min-width: 768px) {
+    .images > div {
+        flex: 0 0 calc(33.33% - 10px); /* Each item takes up 33.33% of the container minus margins */
+    }
+}
+
+/* Media query for screens 1200px and larger (large desktops) */
+@media screen and (min-width: 1200px) {
+    .images > div {
+        flex: 0 0 calc(10% - 10px); /* Each item takes up 25% of the container minus margins */
+    }
+}
+
+
+
+
 
    .login{
     background-color: white;
@@ -78,7 +168,6 @@ search-box{
     padding: 10px;
     
 }
-
 .register{
     background-color: red;
     border: none;
@@ -87,7 +176,27 @@ search-box{
     color: linen;
     padding: 10px;
 }
+#pictures{
+    width: 1350px;
+    height: 50px;
+}
 
+
+/* Media query for screens 768px and larger (tablets and desktops) */
+@media screen and (max-width: 768px) {
+    #pictures {
+        width: 100%;
+        height: auto; /* You may adjust height as per your design needs */
+    }
+}
+
+/* Media query for screens 1200px and larger (large desktops) */
+@media screen and (min-width: 1200px) {
+    #pictures {
+        width: 1500px;
+        height: 400px; /* Adjust height as needed */
+    }
+}
 
 .back-image{
     background-image: url(./asset/images/pink-2.jpg);
@@ -97,7 +206,6 @@ search-box{
 #heading{
     margin: 5px;
 }
-
 .container_card{
     display: flex;
     justify-content: space-around;
@@ -108,10 +216,33 @@ search-box{
     gap: 20px; 
      position:relative ;
     
-
-
 }
 
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container_card {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Medium devices (tablets, 600px - 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container_card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+    .container_card {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
 
 .text{
     margin-top: -185px;
@@ -122,9 +253,7 @@ search-box{
     padding: 20px;
     margin-right:10px ;
     
-
 } 
-
 .container_cardcontent{
     display: flex;
     justify-content: space-around;
@@ -134,7 +263,33 @@ search-box{
     margin-top: 17px;
     gap: 20px;
     
-}  
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container_cardcontent {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Medium devices (tablets, 601px - 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container_cardcontent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+    .container_cardcontent {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
 .main-container{
     background: rgb(195, 195, 225);
     
@@ -159,12 +314,6 @@ search-box{
    margin-top: -20px;
 margin-left:90px ;
 }
-
-
-
-
-
-
 
 
 

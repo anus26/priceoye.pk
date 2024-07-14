@@ -11,6 +11,8 @@
 /* } */
 .announcment-bar{
     background-color: #1498FF;
+    width: 100%px;
+    
 }
 /* Default styles for announcement bar */
 
@@ -24,10 +26,12 @@
 }
 
 /* Media query for screens 1200px and larger (large desktops) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1761px) {
     .announcement-bar {
         padding: 30px;
-        font-size: 24px;
+        font-size: 4px;
+        width: 50px;
+
     }
 }
 
@@ -64,17 +68,31 @@
    }
 
 
-/* Media query for screens 768px and larger (tablets and desktops) */
-@media screen and (min-width: 768px) {
-    
-        /* Adjust styles for larger screens if needed */
-    
+
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-/* Media query for screens 1200px and larger (large desktops) */
-@media screen and (min-width: 1200px)  {
-        /* Further adjust styles for very large screens if needed */
+/* Medium devices (tablets, 601px - 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
     }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 
    
@@ -182,21 +200,37 @@ search-box{
 }
 
 
-/* Media query for screens 768px and larger (tablets and desktops) */
-@media screen and (max-width: 768px) {
+
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     #pictures {
         width: 100%;
-        height: auto; /* You may adjust height as per your design needs */
+        height: auto;
     }
 }
 
-/* Media query for screens 1200px and larger (large desktops) */
-@media screen and (min-width: 1200px) {
+/* Medium devices (tablets, 601px - 768px) */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
     #pictures {
-        width: 1500px;
-        height: 400px; /* Adjust height as needed */
+        width: 668px;
+        height: auto;
     }
 }
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+    #pictures {
+        width: 1500px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 1761px){
+    #pictures{
+        width: ;
+    }
+}
+
 
 .back-image{
     background-image: url(./asset/images/pink-2.jpg);
@@ -310,6 +344,48 @@ search-box{
     justify-content: space-around;
     border-radius: 7px;
 }
+
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .video {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .video .card {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 601px - 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .video {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .video .card {
+        width: 48%;
+    }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+    .video {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .video .card {
+        width: 15.7rem;
+    }
+}
+
 .front-image{
    margin-top: -20px;
 margin-left:90px ;

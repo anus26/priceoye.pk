@@ -5,10 +5,9 @@
     font-family:"Poppins",sans-serif;
     
 }
-/* body,html{ */
-    /* background: lavender; */
-    
-/* } */
+/* body{ 
+    background: rgb(222, 222, 235);
+     } */
 .announcment-bar{
     background-color: #1498FF;
     width: 100%px;
@@ -425,3 +424,22 @@ margin-left:90px ;
     margin-top: -20px;
     margin-left: 150px;
 }
+#back-pictures{
+    background-image: url(./asset/images/High_resolution_wallpaper_background_ID_77700437234.webp);
+}
+.second{
+    margin-top: -250px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+button{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+
